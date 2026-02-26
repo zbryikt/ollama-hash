@@ -2,7 +2,7 @@ require! <[@plotdb/args os fs path]>
 
 result = args meta: base: alias: \b, type: \string, desc: "homedir where .ollama locates in", required: false
 
-home = result.b or os.homedir!
+home = result?options?b or os.homedir!
 
 # 路徑設定
 base-path = path.join home, '.ollama/models'
