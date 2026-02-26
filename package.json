@@ -1,0 +1,23 @@
+{
+  "name": "ollama-hash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zbryikt/ollama-hash.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zbryikt/ollama-hash/issues"
+  },
+  "homepage": "https://github.com/zbryikt/ollama-hash#readme",
+  "dependencies": {
+    "@plotdb/args": "^0.0.3"
+  }
+}
