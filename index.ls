@@ -2,10 +2,9 @@ require! <[@plotdb/args os fs path]>
 
 result = args meta: base: alias: \b, type: \string, desc: "homedir where .ollama locates in", required: false
 
-home = result?options?b or os.homedir!
 
 # 路徑設定
-base-path = path.join home, '.ollama/models'
+base-path = result?options?b or path.join(os.homedir!, '.ollama/models')
 manifest-path = path.join base-path, 'manifests/registry.ollama.ai/library'
 blobs-path = path.join base-path, 'blobs'
 
